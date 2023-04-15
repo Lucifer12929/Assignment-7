@@ -1,0 +1,80 @@
+.Navbar {
+  width: 100%;
+  height: 100vh;
+  color: white;
+}
+.Navbar .background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.top {
+  /* border: 2px solid white; */
+
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 2rem;
+  height: 12vh;
+  box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px,
+    rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+}
+.logo {
+  height: 12vh;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  gap: 2vw;
+  font-size: 12px;
+  z-index: 40;
+}
+
+.content h1:hover {
+  cursor: pointer;
+  color: skyblue;
+}
+
+.bottom {
+  height: 88vh;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+
+.text h1 {
+  font-size: 100px;
+  font-weight: 600;
+  color: hsl(160, 100%, 65%);
+}
+
+.text p {
+  font-size: 50px;
+  font-weight: 400;
+}
+
+@media screen and (max-width: 750px) {
+  .content {
+    gap: 4vw;
+    font-size: 8px;
+  }
+  .text h1 {
+    font-size: 50px;
+    font-weight: 400;
+  }
+
+  .text p {
+    font-size: 20px;
+    font-weight: 300;
+  }
+}
